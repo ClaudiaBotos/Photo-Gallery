@@ -1,0 +1,191 @@
+/******Global Layout*******/
+* { 
+  box-sizing: border-box;
+}
+  
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', 'Roboto Condensed',serif;
+  color: #222;
+  background: #f7f5f0;
+}
+
+
+
+ 
+/******Search Layout*******/
+
+form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    
+}
+
+input {
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    height: 30px;
+    
+    
+}
+
+input:focus
+ {
+    outline:0;
+    border: 2px solid #2980b9;
+    background-color: #ecf0f1;
+    
+}
+
+
+
+/******Gallery*******/
+
+.photo-gallery  {
+         margin:auto;
+       padding-right: 10px;
+        padding-left: 10px;
+        
+}
+
+img {
+    max-width: 100%;
+  }
+
+.image {
+    display: inline-block;
+        width: 50%;
+        margin-right: -4px;
+        vertical-align: top;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+}
+
+
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+
+
+/******Footer*******/
+
+.footer {
+    text-align: center;
+    color: #95a5a6;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+
+/******Lighbox Plugin Style*******/
+
+.lb-nav a.lb-next {
+    opacity: 1;
+    margin-right: -80px
+    
+    
+}
+
+.lb-nav a.lb-prev {
+    opacity: 1;
+    margin-left: -80px
+    
+}
+
+
+
+.lb-caption {
+    width: 100%;
+    margin-top: 30px;
+    display: inline-block;
+    text-align: center;
+    
+    
+}
+
+
+
+
+/**********************
+   MEDIA QUERIES
+**********************/
+
+
+@media screen and (min-width: 768px) {
+    
+    .main {
+        margin: auto;
+       width: 90%;
+    }
+    
+    .header {
+       margin: 0 auto;
+        text-align: center;
+            
+    }
+    
+    
+    fieldset {
+        max-width: 100%;
+    }
+     
+    input {
+        width:450px;
+        
+    }
+  
+    
+    .photo-gallery{
+        padding-left: 20px;
+       text-align: center;
+        
+    }
+    
+    .image {
+        text-align: center;
+        max-width: 25%;
+        padding: 0 10px 10px 0;
+        margin-right: -3px;
+       
+      }
+    
+    
+    
+}
+
+
+
+
+@media screen and (min-width: 1024px)  {
+    
+    .main {
+       width: 80%;
+    }
+    
+    
+    .image {
+       padding: 0 0 20px 0;
+        margin-right: -15px;
+        margin-left: -15px; 
+    }
+}
+    
+  
+ 
+    
