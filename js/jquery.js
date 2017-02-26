@@ -16,7 +16,7 @@ lightbox.option({
 
 
             $('#search').keyup(function() {
-     var searchStr = $(this).val();
+     var searchStr = $(this).val().toLowerCase();
      $('.caption').each(function() {
           var str = $(this).attr("data-title"); 
           if(str.indexOf(searchStr) > -1) { //compares search text to title text
